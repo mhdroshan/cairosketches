@@ -22,7 +22,7 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style-light.css">
 
-	<title>Mireya</title>
+	<title>Cairo Sketches</title>
 
 </head>
 
