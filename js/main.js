@@ -289,17 +289,20 @@
 	});
 
 	var swiper = new Swiper(".mry-testimonials-slider", {
-		slidesPerView: 1,
+		slidesPerView: 4,
 		spaceBetween: 30,
 		loop: true,
+		autoplay: {
+			delay: 500,
+		},
 		navigation: {
 			nextEl: '.mry-button-testimonials-next',
 			prevEl: '.mry-button-testimonials-prev',
 		},
 		speed: 1200,
 		breakpoints: {
-			768: {
-				slidesPerView: 1,
+			500: {
+				slidesPerView: 2,
 			},
 		},
 	});
