@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- color of address bar in mobile browser -->
+    <meta name="theme-color" content="#28292C" />
+    <!-- favicon  -->
+    <link
+      rel="shortcut icon"
+      href="img/light/favicon.png"
+      type="image/x-icon"
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/plugins/bootstrap.min.css" />
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="css/plugins/font-awesome.min.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/plugins/swiper.min.css" />
+    <!-- fancybox css -->
+    <link rel="stylesheet" href="css/plugins/fancybox.min.css" />
+    <!-- mapbox css -->
+    <link href="css/plugins/mapbox-style.css" rel="stylesheet" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style-light.css" />
+
+    <title>Cairo Sketches</title>
+  </head>
+
+  <body>
+    <div class="mry-app">
+      <!-- preloader -->
+      <div class="mry-preloader mry-active">
+        <div class="mry-preloader-content">
+          <img
+            class="mry-logo mry-mb-20"
+            src="img/light/preloader.png"
+            alt="Mireya"
+          />
+          <div class="mry-loader-bar">
+            <div class="mry-loader"></div>
+          </div>
+          <div class="mry-label">Please wait</div>
+        </div>
+      </div>
+      <!-- preloader end -->
+
+      <!-- cursor -->
+      <div class="mry-magic-cursor">
+        <div class="mry-ball">
+          <div class="mry-loader">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="40px"
+              height="40px"
+              viewBox="0 0 50 50"
+              style="enable-background: new 0 0 50 50"
+              xml:space="preserve"
+            >
+              <path
+                d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z"
+              >
+                <animateTransform
+                  attributeType="xml"
+                  attributeName="transform"
+                  type="rotate"
+                  from="0 25 25"
+                  to="360 25 25"
+                  dur="0.6s"
+                  repeatCount="indefinite"
+                />
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- cursor end -->
+
+      <!-- top panel -->
+      <div class="mry-top-panel">
+        <div class="mry-logo-frame">
+          <a href="index.html" class="mry-default-link mry-anima-link">
+            <img class="mry-logo" src="img/light/logo2.png" alt="Mireya" />
+          </a>
+        </div>
+        <div class="mry-menu-button-frame">
+          <div class="mry-label">Menu</div>
+
+          <div class="mry-menu-btn mry-magnetic-link">
+            <div class="mry-burger mry-magnetic-object">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- top panel end -->
+
+      <!-- menu -->
+      <div class="mry-menu">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-md-4">
+              <nav id="mry-dynamic-menu">
+                <ul>
+                    <li class="menu-item">
+                    <a href="index.html" class="mry-default-link">Home</a>
+                     
+                  </li>
+                  <li class="menu-item">
+                    <a href="about.html" class="mry-anima-link mry-default-link"
+                      >About</a
+                    >
+                  </li>
+                  <li class="menu-item current-menu-item">
+                    <a href="#" class="mry-default-link">Works</a>
+                  </li>
+                  <li class="menu-item">
+                    <a
+                      href="contact.html"
+                      class="mry-anima-link mry-default-link"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-md-4">
+              <div class="mry-info-box-frame">
+                <div class="mry-info-box">
+                  <div class="mry-mb-20">
+                    <div class="mry-label mry-mb-5">Country:</div>
+                    <div class="mry-text">UAE</div>
+                  </div>
+                  <div class="mry-mb-20">
+                    <div class="mry-label mry-mb-5">City:</div>
+                    <div class="mry-text">Abu Dhabi</div>
+                  </div>
+                  <div class="mry-mb-20">
+                    <div class="mry-label mry-mb-5">Adress:</div>
+                    <div class="mry-text">
+                      Mazyad Mall <br />Mohammed Bin Zayad City <br />
+                      Abu Dhabi
+                    </div>
+                  </div>
+                  <div class="mry-mb-20">
+                    <div class="mry-label mry-mb-5">Email:</div>
+                    <a
+                      class="mry-text mry-default-link"
+                      href="mailto:info@cairosketches.com"
+                      >info@cairosketches.com</a
+                    >
+                  </div>
+                  <div>
+                    <div class="mry-label mry-mb-5">Phone:</div>
+                    <a class="mry-text" href="tel:+971 50 274 7485"><span><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M742.614-165.001q-109.076-9-209.691-57.577-100.615-48.577-182.384-130.346-81.384-81.769-129.461-182.191-48.077-100.423-57.077-209.499-2-21 12.5-36.692 14.5-15.693 35.5-15.693h104.46q18.154 0 31.231 10.885 13.077 10.885 18.23 28.423L386.845-673q2.385 13.385-1.5 26.154-3.884 12.769-12.654 20.769l-92.384 89.923q22.308 41.846 49.462 78.769 27.154 36.924 59.538 69.078 31.924 31.923 69.001 59.154 37.077 27.231 80.077 49.538l94.769-92.538q8.385-8.769 19.231-11.692 10.846-2.923 24.231-.923l80.075 17.615q18.154 5 28.731 18.461 10.577 13.462 10.577 32.001v103.69q0 21-16.193 35.5-16.192 14.5-37.192 12.5Z"/></svg></span> 050 274 7485</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu end -->
+
+      <div class="transition-fade">
+        <div class="mry-content-frame" id="scroll">
+          <canvas class="mry-dots" style="display: none"></canvas>
+
+          <div class="mry-head-bg">
+            <img src="img/light/projects/prjct-6/1.jpg" alt="background" />
+            <div class="mry-bg-overlay"></div>
+          </div>
+
+          <div class="mry-banner mry-p-140-0">
+            <div class="container">
+              <div class="mry-main-title mry-title-center">
+                <div class="mry-subtitle mry-mb-20 mry-fo">Portfolio</div>
+                <h1 class="mry-mb-20 mry-fo">
+                  Explore Our Amazing<br /><span class="mry-border-text"
+                    >Professional Cases</span
+                  ><span class="mry-animation-el"></span>
+                </h1>
+                <div class="mry-text mry-fo">
+                  Discover our diverse range of projects and designs.
+                </div>
+                <div class="mry-scroll-hint-frame">
+                  <a
+                    class="mry-scroll-hint mry-smooth-scroll mry-magnetic-link mry-fo"
+                    href="#mry-anchor"
+                  >
+                    <span class="mry-magnetic-object"></span>
+                  </a>
+                  <div class="mry-label mry-fo">Scroll Down</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- portfolio -->
+          <div class="mry-portfolio mry-p-100-100">
+            <div class="container">
+              <div class="mry-filter mry-mb-40 mry-fo d-none">
+                <a
+                  href="#"
+                  data-filter="*"
+                  class="mry-card-category mry-default-link mry-current"
+                  >All Categories</a
+                >
+                <a
+                  href="#"
+                  data-filter=".architecture"
+                  class="mry-card-category mry-default-link"
+                  >Architecture</a
+                >
+                <a
+                  href="#"
+                  data-filter=".interior"
+                  class="mry-card-category mry-default-link"
+                  >Interior Design</a
+                >
+                <a
+                  href="#"
+                  data-filter=".repair"
+                  class="mry-card-category mry-default-link"
+                  >Repair</a
+                >
+              </div>
+              <div class="mry-portfolio-frame">
+  <div class="mry-masonry-grid">
+    <div class="mry-grid-sizer"></div>
+
+    <!-- Al Ain Villa -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">interior</div>
+          <img src="img/light/projects/cairosketches/al-ain-villa/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/al-ain-villa/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">Al Ain Villa</a>
+          </h4>
+          <div class="mry-text">
+            A luxurious villa with modern interior design elements.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Arun Residence -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 architecture">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">architecture</div>
+          <img src="img/light/projects/cairosketches/arun-residance/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/arun-residance/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">Arun Residence</a>
+          </h4>
+          <div class="mry-text">
+            A stunning architectural masterpiece with unique features.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bridge Way -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">interior</div>
+          <img src="img/light/projects/cairosketches/bridge-way/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/bridge-way/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">Bridge Way</a>
+          </h4>
+          <div class="mry-text">
+            Elegant interior design for a sophisticated living space.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bridge Way Office -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior repair">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">repair</div>
+          <video autoplay>
+            <source src="img/light/projects/cairosketches/bridge-way-office/01.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/bridge-way-office/01.mp4" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">Bridge Way Office</a>
+          </h4>
+          <div class="mry-text">
+            Modern office space with a focus on functionality and style.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cafe -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 architecture repair">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">architecture repair</div>
+          <img src="img/light/projects/cairosketches/cafe/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/cafe/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">Cafe</a>
+          </h4>
+          <div class="mry-text">
+            A cozy cafe with a blend of modern and rustic design elements.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Charlis Steek -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 repair">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">repair</div>
+          <img src="img/light/projects/cairosketches/charlis-steek/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/charlis-steek/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">Charlis Steek</a>
+          </h4>
+          <div class="mry-text">
+            A repair project that combines efficiency with aesthetic appeal.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ever Win Engineer Consultancy -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior architecture">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">architecture interior</div>
+          <img src="img/light/projects/cairosketches/Ever-win-engneering-consultancy/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/Ever-win-engneering-consultancy/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">Ever Win Engineer Consultancy</a>
+          </h4>
+          <div class="mry-text">
+            Innovative engineering solutions for modern architectural needs.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Information Desk -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">interior</div>
+          <img src="img/light/projects/cairosketches/information-desk/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/information-desk/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">Information Desk</a>
+          </h4>
+          <div class="mry-text">
+            A sleek and functional information desk for public spaces.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kumbakonam Cafe -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">interior</div>
+          <img src="img/light/projects/cairosketches/kumbakonam-cafe/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/kumbakonam-cafe/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">Kumbakonam Cafe</a>
+          </h4>
+          <div class="mry-text">
+            A charming cafe with a warm and inviting interior design.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marmoom Camp -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 architecture">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">architecture</div>
+          <img src="img/light/projects/cairosketches/marmoom-camp/07.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/marmoom-camp/07.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">Marmoom Camp</a>
+          </h4>
+          <div class="mry-text">
+            An architectural marvel set in the serene Marmoom desert.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marmoom Office -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">interior</div>
+          <img src="img/light/projects/cairosketches/marmoom-office/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/marmoom-office/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">Marmoom Office</a>
+          </h4>
+          <div class="mry-text">
+            A modern office space designed for productivity and comfort.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mazrui Majlis -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">interior</div>
+          <img src="img/light/projects/cairosketches/mazrui-majlis/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/mazrui-majlis/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">Mazrui Majlis</a>
+          </h4>
+          <div class="mry-text">
+            A traditional Majlis with a touch of modern interior design.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Palace Kitchen -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">interior</div>
+          <img src="img/light/projects/cairosketches/palace-kitchen/06.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/palace-kitchen/06.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">Palace Kitchen</a>
+          </h4>
+          <div class="mry-text">
+            A grand kitchen designed for a luxurious palace setting.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Retail Shope Fittings -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">interior</div>
+          <img src="img/light/projects/cairosketches/retail-shope-fittings/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/retail-shope-fittings/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">Retail Shope Fittings</a>
+          </h4>
+          <div class="mry-text">
+            Stylish and functional fittings for a modern retail shop.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sigma Exterior -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 architecture">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">architecture</div>
+          <video autoplay>
+            <source src="img/light/projects/cairosketches/sigma-exterior/02.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+         
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/sigma-exterior/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">Sigma Exterior</a>
+          </h4>
+          <div class="mry-text">
+            A striking exterior design for a contemporary building.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sweet And Nuts -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">interior</div>
+          <img src="img/light/projects/cairosketches/sweet-and-nuts/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/sweet-and-nuts/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">Sweet And Nuts</a>
+          </h4>
+          <div class="mry-text">
+            A delightful interior for a sweet and nuts retail store.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TGC -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">interior</div>
+          <img src="img/light/projects/cairosketches/TGC/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/TGC/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="work-1.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="work-1.html">TGC</a>
+          </h4>
+          <div class="mry-text">
+            A modern interior design for a contemporary living space.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trim And Cut -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">interior</div>
+          <img src="img/light/projects/cairosketches/trim-and-cut/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/trim-and-cut/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="project.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="project.html">Trim And Cut</a>
+          </h4>
+          <div class="mry-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- World Star -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">interior</div>
+          <img src="img/light/projects/cairosketches/world-star/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/world-star/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="project.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="project.html">World Star</a>
+          </h4>
+          <div class="mry-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- World Star 1st Floor Cabin -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">interior</div>
+          <img src="img/light/projects/cairosketches/world-star-1-st-floor-cabin/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/world-star-1-st-floor-cabin/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="project.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="project.html">World Star 1st Floor Cabin</a>
+          </h4>
+          <div class="mry-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- World Star Camp -->
+    <div class="mry-masonry-grid-item mry-masonry-grid-item-50 interior">
+      <div class="mry-card-item">
+        <div class="mry-card-cover-frame mry-mb-20 mry-fo">
+          <div class="mry-badge">interior</div>
+          <img src="img/light/projects/cairosketches/world-star-camp/05.jpg" alt="project" />
+          <div class="mry-cover-overlay"></div>
+          <div class="mry-hover-links">
+            <a href="img/light/projects/cairosketches/world-star-camp/05.jpg" data-fancybox="works" class="mry-zoom mry-magnetic-link">
+              <span class="mry-magnetic-object"><i class="fas fa-expand"></i></span>
+            </a>
+            <a href="project.html" class="mry-more mry-magnetic-link mry-anima-link">
+              <span class="mry-magnetic-object"><i class="fas fa-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <div class="mry-item-descr mry-fo">
+          <h4 class="mry-mb-10">
+            <a href="project.html">World Star Camp</a>
+          </h4>
+          <div class="mry-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+            </div>
+          </div>
+          <!-- portfolio end -->
+
+          <!-- footer -->
+          <footer class="mry-footer">
+            <div class="container">
+              <div class="mry-main-title mry-title-center mry-p-0-100">
+                <div class="mry-subtitle mry-mb-20 mry-fo">Call to action</div>
+                <h2 class="mry-h1 mry-mb-20 mry-fo">
+                  Do you have <span class="mry-border-text">a project?</span>
+                </h2>
+                <div class="mry-text mry-mb-30 mry-fo">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  <br />Asperiores, cupiditate?
+                </div>
+                <div class="mry-fo">
+                  <a
+                    href="contact.html"
+                    class="mry-anima-link mry-btn mry-btn-color mry-default-link"
+                    >Let's discuss</a
+                  >
+                  <a
+                    href="portfolio-grid-2.html"
+                    class="mry-anima-link mry-btn-text mry-default-link"
+                    >Portfolio</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="mry-footer-copy">
+              <div class="container">
+                <div>Mireya © early 2021</div>
+                <ul class="mry-social">
+                  <li>
+                    <a href="#."><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#."><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#."><i class="fab fa-behance"></i></a>
+                  </li>
+                  <li>
+                    <a href="#."><i class="fab fa-dribbble"></i></a>
+                  </li>
+                </ul>
+                <div>
+                  By:
+                  <a
+                    href="https://themeforest.net/user/ultimatewebsolutions/"
+                    class="mry-default-link"
+                    target="_blank"
+                    >UWS</a
+                  >
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- footer end -->
+
+          <div class="mry-head-bg mry-head-bottom">
+            <img src="img/light/projects/prjct-2/1.jpg" alt="background" />
+            <div class="mry-bg-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jquery js -->
+    <script src="js/plugins/jquery.min.js"></script>
+    <!-- tween max js -->
+    <script src="js/plugins/tween-max.min.js"></script>
+    <!-- scroll magic js -->
+    <script src="js/plugins/scroll-magic.js"></script>
+    <!-- scroll magic gsap plugin js -->
+    <script src="js/plugins/scroll-magic-gsap-plugin.js"></script>
+    <!-- swiper js -->
+    <script src="js/plugins/swiper.min.js"></script>
+    <!-- isotope js -->
+    <script src="js/plugins/isotope.min.js"></script>
+    <!-- fancybox js -->
+    <script src="js/plugins/fancybox.min.js"></script>
+    <!-- mapbox js -->
+    <script src="js/plugins/mapbox.min.js"></script>
+    <!-- smooth scrollbar js -->
+    <script src="js/plugins/smooth-scrollbar.min.js"></script>
+    <!-- overscroll js -->
+    <script src="js/plugins/overscroll.min.js"></script>
+    <!-- canvas js -->
+    <script src="js/plugins/canvas.js"></script>
+    <!-- parsley js -->
+    <script src="js/plugins/parsley.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
