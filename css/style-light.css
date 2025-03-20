@@ -194,6 +194,7 @@ h6 {
   letter-spacing: 2px;
   line-height: 15px;
   padding-top: 3px;
+  display: none;
 }
 
 /* After 992px */
@@ -524,7 +525,7 @@ h6 {
 }
 
 .mry-app .mry-top-panel .mry-logo-frame {
-  background-color: #f7f8fa;
+  background-color: transparent;
   display: block;
   display: flex;
   justify-content: flex-start;
@@ -534,7 +535,12 @@ h6 {
 }
 
 .mry-app .mry-top-panel .mry-logo-frame .mry-logo {
-  width: 100px;
+  width: 115px;
+}
+@media only screen and (max-width: 600px) {
+  .mry-app .mry-top-panel .mry-logo-frame .mry-logo {
+    width: 100px;
+  }
 }
 
 /* Menu Button */
@@ -546,7 +552,23 @@ h6 {
   justify-content: space-between;
   background-color: #f7f8fa;
 }
-
+.floating-icon{
+  margin: 20px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+.floating-icon img{
+  height: 55px;
+}
+@media only screen and (max-width: 600px) {
+  .floating-icon{
+    left: auto;
+    right: 10px;
+    margin: 5px;
+  }
+}
 .mry-menu-button-frame .mry-label {
   color: #0d0d0d;
 }
